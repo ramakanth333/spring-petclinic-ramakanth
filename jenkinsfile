@@ -1,5 +1,6 @@
 pipeline{
-    agent {label 'jdk8'}
+   agent any;   
+// agent {label 'jdk8'}
     stages{
         stage('github clone'){
             steps{
