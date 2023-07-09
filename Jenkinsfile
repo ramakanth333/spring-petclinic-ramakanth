@@ -12,7 +12,7 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
-        stage(name: 'junit artifact'){
+        stage('junit artifact'){
             steps{
                 junit '**/target/surefire-reports/*.xml'
             }
